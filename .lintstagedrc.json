@@ -1,4 +1,10 @@
 {
-  "*.tsx": "eslint --fix",
-  "\"./**/*.{js,jsx,ts,tsx,json}\"": "prettier --write"
+  "components/*.{js,ts,tsx,jsx}": [
+    "eslint --fix --ext .js,.jsx,.ts,.tsx .",
+    "npx prettier --write"
+  ],
+  "app/*.{js,ts,tsx,jsx}": [
+    "eslint --fix --ext .js,.jsx,.ts,.tsx .",
+    "npx prettier --write"
+  ]
 }
